@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe finder </title>
+    <link rel="stylesheet" href="/Css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Start the container-->
+    <div class="container">
+      <header>
+        <h1 class="heading"><i class="fas fa-utensils"></i>Recipe Finder</h1>
+        <p>find delicious recipe from around the world</p>
+      </header>
+      <!--Create an api link-->
+      <p class="api-link">
+        Data from
+        <a href="https://www.themealdb.com/documentation" target="_blank"
+          >TheMealDB
+        </a>
+      </p>
+      <!--Start a search container-->
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="search for the meals or keywords..."
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <!--End a search container-->
+      <div id="error-container" class="hidden">
+        <p>No meals found. Try another search term!</p>
+      </div>
+      <div id="result-heading"></div>
+      <div id="meals" class="meals-container"></div>
+      <div id="meals-details" class="hidden">
+        <button id="back-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to recipe
+        </button>
+      </div>
+      <div class="meals-details-content"></div>
+    </div>
+    <!--End a container-->
+    <script src="/Javascript/index.js"></script>
+  </body>
+</html>
